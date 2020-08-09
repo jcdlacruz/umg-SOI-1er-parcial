@@ -14,13 +14,13 @@ print('*' * 25)
 
 while cantidadnodos > 0:
     contador = 0
-    for x in range(1000):
+    for x in range(100000):
         print("Contador", contador)
         contador = contador + 1
-        if contador > 100:
+        if contador > 10000:
             contador = 1
-        elif contador == 100:
+        elif contador == 10000:
             if not lista.vacia():
-                print("Nodo eliminado", lista.ultimo.dato)
+                print("------------------->> Nodo eliminado: -->>", lista.ultimo.dato)
                 lista.eliminar_ultimo()
                 cantidadnodos = cantidadnodos - 1
